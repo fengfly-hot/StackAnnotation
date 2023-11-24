@@ -33,10 +33,10 @@ public class MyStringStackTest extends TestCase {
 	public void testPush() {
 		String o1 = null;  
 		MyStringStack stack = new MyStringStack();
-		stack.push (s1);
-		assertTrue (stack.isEmpty());
 		// stack.push (s1);
-        // stack.push (s2);
+		assertTrue (stack.isEmpty());
+		 stack.push (s1);
+         stack.push (s2);
         assertFalse (stack.isEmpty());
 	}
 
@@ -69,7 +69,7 @@ public class MyStringStackTest extends TestCase {
 		String s3 = null;
 		MyStringStack stack = new MyStringStack();
 		assertTrue (stack.isEmpty());
-		assertFalse(stack.isEmpty());
+		//assertFalse(stack.isEmpty());
 		
 		try {
 			s3 = stack.pop();
